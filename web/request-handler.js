@@ -39,6 +39,8 @@ var getRequest = function(req, res, url) {
 var postRequest = function(req, res) {
   // 
 
+  // return 302 Found statusCode
+
 }
 
 var requestAction = {

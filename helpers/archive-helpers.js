@@ -42,6 +42,7 @@ exports.isUrlInList = function(list, url){
 };
 
 exports.addUrlToList = function(){
+  // append site URL + "\n" into sites.txt 
 };
 
 exports.isURLArchived = function(url, callback){

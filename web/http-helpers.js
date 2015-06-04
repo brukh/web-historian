@@ -10,6 +10,7 @@ exports.headers = headers = {
   'Content-Type': "text/html"
 };
 
+<<<<<<< HEAD
 /*  Write some code here that helps serve up your static files!
    (Static files are things like html (yours or archived from others...), css, or anything that doesn't change often.)
 */
@@ -36,5 +37,13 @@ exports.sendResponse = function(statusCode, response, body) {
   response.end(JSON.stringify(body));
 };
 
+=======
+exports.serveAssets = function(res, asset, callback) {
+  // Write some code here that helps serve up your static files!
+  // (Static files are things like html (yours or archived from others...), css, or anything that doesn't change often.)
+};
+
+
+>>>>>>> d281c5846fb583fa7b9b2caf9bf722acf3365d04
 
 // As you progress, keep thinking about what helper functions you can put here!

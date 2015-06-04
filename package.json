@@ -4,9 +4,13 @@
   "main": "web/basic-server.js",
   "author": "Hack Reactor",
   "license": "Copyright 2014, Hack Reactor. All rights reserved.",
+<<<<<<< HEAD
   "dependencies": {
     "http-request": "^0.7.0"
   },
+=======
+  "dependencies": {},
+>>>>>>> d281c5846fb583fa7b9b2caf9bf722acf3365d04
   "devDependencies": {
     "chai": "^1.9.0",
     "cron": "^1.0.3",
