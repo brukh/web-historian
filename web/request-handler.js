@@ -2,7 +2,7 @@ var path = require('path');
 var archive = require('../helpers/archive-helpers');
 var httpHelper = require('./http-helpers.js');
 var url = require('url');
-var get = require('http-request');
+
 
 exports.handleRequest = function(req, res) {
 
@@ -37,10 +37,11 @@ var getRequest = function(req, res, url) {
 /* Handles POST requests */
 
 var postRequest = function(req, res) {
-  // 
+  // save url
+  archive.addUrlToList(req._postData.url);
 
   // return 302 Found statusCode
-
+  httpHelper.sendResponse(302, res);
 }
 
 var requestAction = {
@@ -48,11 +49,6 @@ var requestAction = {
   "POST": postRequest
 };
 
-
-// test url === '/www.google.com'
-// parse for requested website
-// var URL = url.parse(req.url).path.substring(1); // get rid of front slash
-// console.log(URL);
 
 // check in archives/sites for file
 // var localDIR = archive.paths.archivedSites;
